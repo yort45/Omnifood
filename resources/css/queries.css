@@ -1,6 +1,14 @@
 
 
 
+
+
+/*--------max of 1920 for widescreen monitors*/
+@media only screen and (max-width: 1920px) {
+   
+}
+
+
 /*-----ipad landscape and small computers big tab to 1200px: 1024-1200px with smaller than pxl row 1140px -----*/
 @media only screen and (max-width: 1200px) {
     .hero-text-box {
