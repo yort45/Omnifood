@@ -4,11 +4,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--critical for responsive design-->
         <!--start of set up initial -->
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css"><!--icons file to be used -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css"><!--animations to be used -->
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css"><!--icons file to be used -->
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
         <title>Omnifood</title>
         <!-- end of initial setup -->
@@ -21,18 +21,18 @@
                     <img src="resources/img/logo-white.png" alt="OmniFood Logo" class="logo">
                     <img src="resources/img/logo.png" alt="OmniFood Logo" class="logo-black">
                     <ul class="main-nav">
-                        <li class=""><a href="#">Food Delivery</a></li>
-                        <li class=""><a href="#">How it works</a></li>
-                        <li class=""><a href="#">Our cities</a></li>
-                        <li class=""><a href="#section-plans">Sign up</a></li>
+                        <li class=""><a href="#features">Food Delivery</a></li>
+                        <li class=""><a href="#works">How it works</a></li>
+                        <li class=""><a href="#cities">Our cities</a></li>
+                        <li class=""><a href="#plans">Sign up</a></li>
                     </ul>
                 </div>
             </nav>
         <!--sec 0: logo nav main heading other -->
             <div class="hero-text-box">
                 <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
-                <a class="btn btn-full" href="#">I'm hungry</a> <!-- takes us to the sign up section -->
-                <a class="btn btn-ghost" href="#">Show me more!</a>
+                <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a> <!-- takes us to the sign up section -->
+                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more!</a>
             </div>
             
             
@@ -40,7 +40,7 @@
 <!---- -->     
         
 <!----THIS SECTION IS THE 2ND PART THAT HAS FULL DISCRIPTION WITH ICONS IN BOX FORMATS ACROSS 4 BOXES HORIZ -->
-        <section class="section-features js--section-features">
+        <section class="section-features js--section-features" id="features">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food</h2>
                 <p class="long-copy">
@@ -48,7 +48,7 @@
                 </p>
             </div>
             
-            <div class="row">
+            <div class="row js--wp-1">
                 <div class="col span-1-of-4 box">
                     <i class="ion-ios-infinite-outline icon-big"></i>
                     <h3>Up to 365 days/year</h3>
@@ -131,13 +131,13 @@
 <!----END OF SECTION::THIS PART IS THE IMAGES GROUPED IN BOXES AND HAVE AN EFFECT THAT LIGHTENS AND ZOOMS WHEN HOVER::END OF SECTION -->
         
 <!----THIS SECTION IS THE HOW IT WORKS SECTION THAT HAS A 1-2-3 STEPS, iPHONE IMAGE OF APP AND LINKS TO APP STORES ---->
-        <section class="section-steps">
+        <section class="section-steps" id="works">
             <div class="row">
                 <h2>How it works &mdash; Simple as 1, 2, 3</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-2 steps-box">
-                    <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen">
+                    <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
                 </div>
                 <div class="col span-1-of-2 steps-box">
                     <div class="works-step">
@@ -161,11 +161,11 @@
 <!----END OF SECTION::THIS SECTION IS THE HOW IT WORKS SEC. THAT HAS iPHONE IMAGE OF APP AND LINKS TO APP STORES:: END OF SECTION--->
         
 <!----THIS SECTION IS THE CITIES SECTION W 4 CITIES, PHOTOS AND UL DETAILS OF EACH 3-4 DETAILS ---->  
-        <section class="section-cities">
+        <section class="section-cities" id="cities">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
-            <div class="row">
+            <div class="row js--wp-3">
                 <div class="col span-1-of-4 box">
                     <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
                     <h3>Lisbon</h3>
@@ -264,7 +264,7 @@
 <!---- END OF SECTION :: START OF CUSTOMERS CANT LIVE WITHOUT US SECTION 3 customer statements :: END OF SECTION ---->
                 
 <!----START OF SIGN UP SECTION W THREE CARDS THAT CHANGE COLOR AND HAVE BUTTONS ON THEM---->
-        <section class="section-plans">
+        <section class="section-plans js--section-plans" id="plans">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>            
@@ -272,7 +272,7 @@
 <!-- start of first card --------->
                                 <!--Card #1 ------------------------------------------>
                <div class="col span-1-of-3">
-                    <div class="plan-box">
+                    <div class="plan-box js--wp-4">
                         <div>
                             <h3>Premium</h3>
                             <p class="plan-price">$399 <span>/ month</span></p>
@@ -320,7 +320,7 @@
                     <div class="plan-box">
                         <div>
                             <h3>Starter</h3>
-                            <p class="plan-price">$19 <span>/ meal</span></span></p>
+                            <p class="plan-price">$19 <span>/ meal</span></p>
                             <p class="plan-price-meal">&nbsp;</p>
                         </div>
                     <div>
