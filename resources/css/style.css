@@ -212,8 +212,7 @@ header {
     height: 50px;
     width: auto;
     float: left;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px 0;
 }
 
 /*----main navi ---*/
@@ -246,12 +245,13 @@ header {
 
 /*----sticky navi----*/
 .sticky {
-    position: fixed;
+    position: fixed; /*statys always at same point regardless of scrolling*/
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.78);
+    background-color: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
 }
 
 .sticky .main-nav { margin-top: 18px; }
@@ -263,12 +263,11 @@ header {
 }
 
 .sticky .logo {display: none; }
-
-.stick .logo-black { display: block; }
+.sticky .logo-black { display: block; }
 /*----------------------------------------------*/
 /*---FEATURES---*/
 /*----------------------------------------------*/
-.section-features long-copy {
+.section-features .long-copy {
     margin-bottom: 40px;
 }
 

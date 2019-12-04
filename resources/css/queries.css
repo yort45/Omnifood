@@ -2,10 +2,25 @@
 
 
 
+@media screen and (max-width: 1400px) {
+   .row {
+        width: 1370px;
+   }
+}
 
-/*--------max of 1920 for widescreen monitors*/
-@media only screen and (max-width: 1920px) {
-   
+
+@media screen and (max-width: 1600px) {
+   .row {
+        width: 1570px;
+   }
+}
+
+
+
+@media screen and (max-width: 1900px) {
+   .row {
+        width: 1870px;
+   }
 }
 
 
